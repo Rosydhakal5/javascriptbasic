@@ -319,9 +319,51 @@ console.log(filteredFruit)
 // },1 );
 // console.log("multiplication is ", multiResult)
 
-const arrayOfarea = [2, 2, 5, 2];
-let sum = 0;
-for (i = 0; i < 4; i++){
-   sum+= arrayOfarea[i];
-}
-console.log(sum);
+// const arrayOfarea = [2, 2, 5, 2];
+// let sum = 0;
+// for (i = 0; i < 4; i++){
+//    sum+= arrayOfarea[i];
+// }
+// console.log(sum);
+
+
+// create an array of random 50numbers range between 1 to 100
+//---------------pseudo code----------------------->
+//create array
+//make it less than 100
+
+// let number;
+// for (i= 50; i < 100; i--);{
+//     number = (Math.random());
+// }
+
+// console.log (number);
+
+// const newArr = [];
+// for(i=0; i<50; i++){
+//     let num =Math.floor((Math.random()*50)+1)
+//     // console.log(num)
+//     newArr.push(num)
+// }
+// console.log(newArr)
+
+
+// const newEmpty= [];
+// for (i=0; i<40; i++){
+//     let num = Math.floor((Math.random()*20)+1)
+//     newEmpty.push(num)
+// }
+// console.log(newEmpty);
+
+
+const arrayWords = ["apple", "banana", "aeroplane", "batman"];
+// for(i=0; i<arrayWords.length; i++){
+    let randomNumber = Math.floor(Math.random() * arrayWords.length);
+    console.log(arrayWords[randomNumber])
+    // console.log(arrayWords[]);
+// }
+
+
+const randomWords = ["aeroplane", "bus", "train", "tram", "bottle"];
+let randomNum = Math.floor(Math.random()*randomWords.length)
+console.log(randomWords[randomNum]);
