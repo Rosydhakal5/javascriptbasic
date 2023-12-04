@@ -367,3 +367,13 @@ const arrayWords = ["apple", "banana", "aeroplane", "batman"];
 const randomWords = ["aeroplane", "bus", "train", "tram", "bottle"];
 let randomNum = Math.floor(Math.random()*randomWords.length)
 console.log(randomWords[randomNum]);
+
+
+//create unique number 
+const newUnique = [];
+for ( let i=0; i<20; i++){
+    let newList = Math.floor((Math.random()*20)+1);
+    if(!newUnique.includes(newList)){
+    newUnique.push(newList);
+} }
+console.log(newUnique);
