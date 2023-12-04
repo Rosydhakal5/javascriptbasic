@@ -287,7 +287,6 @@ console.log(filteredFruit)
 // console.log(sum);
 
 
-
 // const arrayOfNums = [2, 4, 6, 8];
 // let sum = 0;
 // for (let j = 0; j < 4; j++){
@@ -296,20 +295,33 @@ console.log(filteredFruit)
 // console.log(sum)
 
 
+
+
+
+
+
+
 //reduce
-const arrayOfNums = [2, 4, 6, 8, 1];
-const result = arrayOfNums.reduce((previousValue, currentValue) =>
-{
-    previousValue = previousValue + currentValue
-    return previousValue;
-},0);
-console.log("sum of number of array", result)
+// const arrayOfNums = [2, 4, 6, 8, 1];
+// const result = arrayOfNums.reduce((previousValue, currentValue) =>
+// {
+//     previousValue = previousValue + currentValue
+//     return previousValue;
+// },0);
+// console.log("sum of number of array", result)
 
 
-const arrayOfNumbers = [2, 4, 6, 8, 1];
-const multiResult = arrayOfNumbers.reduce((accValue, currValue) =>
-{ 
-    accValue = accValue * currValue
-    return accValue
-},1 );
-console.log("multiplication is ", multiResult)
+// const arrayOfNumbers = [2, 4, 6, 8, 1];
+// const multiResult = arrayOfNumbers.reduce((accValue, currValue) =>
+// { 
+//     accValue = accValue * currValue
+//     return accValue
+// },1 );
+// console.log("multiplication is ", multiResult)
+
+const arrayOfarea = [2, 2, 5, 2];
+let sum = 0;
+for (i = 0; i < 4; i++){
+   sum+= arrayOfarea[i];
+}
+console.log(sum);
