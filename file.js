@@ -273,4 +273,43 @@ const filteredFruit = fruits.find(element => element.length > 5);
 console.log(filteredFruit)
 
 //slice 
+
 //reduce
+// write foreach [2, 4, 6, 8]
+
+// const arrayOfNums = [2, 4, 6, 8];
+// let sum = 0;
+
+// arrayOfNums.forEach(element => {
+//     sum = sum + element;
+// });
+
+// console.log(sum);
+
+
+
+// const arrayOfNums = [2, 4, 6, 8];
+// let sum = 0;
+// for (let j = 0; j < 4; j++){
+//     sum = sum + arrayOfNums[j];
+// }
+// console.log(sum)
+
+
+//reduce
+const arrayOfNums = [2, 4, 6, 8, 1];
+const result = arrayOfNums.reduce((previousValue, currentValue) =>
+{
+    previousValue = previousValue + currentValue
+    return previousValue;
+},0);
+console.log("sum of number of array", result)
+
+
+const arrayOfNumbers = [2, 4, 6, 8, 1];
+const multiResult = arrayOfNumbers.reduce((accValue, currValue) =>
+{ 
+    accValue = accValue * currValue
+    return accValue
+},1 );
+console.log("multiplication is ", multiResult)
