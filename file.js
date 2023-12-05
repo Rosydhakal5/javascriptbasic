@@ -409,4 +409,20 @@ for ( let i=0; i<20; i++){
 } }
 console.log(newUnique);
 
+// <----How it executes ----->
 
+console.log("hello world")
+setTimeout(function callMeBack(){
+    console.log("hey this is after few seconds1")
+}, 3000)
+
+setTimeout(function callMeBack(){
+    console.log("hey this is after few seconds2")
+}, 4000)
+
+setTimeout(function callMeBack(){
+    console.log("hey this is after few seconds")
+})
+
+
+console.log("heeeeelloo")
