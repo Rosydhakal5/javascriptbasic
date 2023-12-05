@@ -409,20 +409,50 @@ for ( let i=0; i<20; i++){
 } }
 console.log(newUnique);
 
-// <----How it executes ----->
+// <----How  setTimeOut executes ----->
 
-console.log("hello world")
-setTimeout(function callMeBack(){
-    console.log("hey this is after few seconds1")
-}, 3000)
+// console.log("hello world")
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds1")
+// }, 3000)
 
-setTimeout(function callMeBack(){
-    console.log("hey this is after few seconds2")
-}, 4000)
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds2")
+// }, 4000)
 
-setTimeout(function callMeBack(){
-    console.log("hey this is after few seconds")
-})
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds")
+// })
 
 
-console.log("heeeeelloo")
+// console.log("heeeeelloo")
+
+
+// <------------with function calling at the end, checking which runs first --------->
+// function printName(){
+//     console.log("hi my name is Rosy")
+// }
+// // <----should run on 4th---->
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds1")
+// }, 3000)
+
+// //-------should run at last 
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds2")
+// }, 4000)
+
+// //should run at 3rd
+// setTimeout(function callMeBack(){
+//     console.log("hey this is after few seconds")
+// })
+
+// //<--- first one --->
+// console.log("heeeeellllloo")
+// //<---second one--->
+// printName();
+
+// //lets run and check
+
+
+// <------------------------------------------->
