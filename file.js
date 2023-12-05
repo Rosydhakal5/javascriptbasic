@@ -356,20 +356,51 @@ console.log(filteredFruit)
 // console.log(newEmpty);
 
 
-const arrayWords = ["apple", "banana", "aeroplane", "batman"];
-// for(i=0; i<arrayWords.length; i++){
-    let randomNumber = Math.floor(Math.random() * arrayWords.length);
-    console.log(arrayWords[randomNumber])
-    // console.log(arrayWords[]);
-// }
+// const arrayWords = ["apple", "banana", "aeroplane", "batman"];
+// // for(i=0; i<arrayWords.length; i++){
+//     let randomNumber = Math.floor(Math.random() * arrayWords.length);
+//     console.log(arrayWords[randomNumber])
+//     // console.log(arrayWords[]);
+// // }
 
 
-const randomWords = ["aeroplane", "bus", "train", "tram", "bottle"];
-let randomNum = Math.floor(Math.random()*randomWords.length)
-console.log(randomWords[randomNum]);
+// const randomWords = ["aeroplane", "bus", "train", "tram", "bottle"];
+// let randomNum = Math.floor(Math.random()*randomWords.length)
+// console.log(randomWords[randomNum]);
 
 
-//create unique number 
+// //create unique number 
+// const newUnique = [];
+// for ( let i=0; i<20; i++){
+//     let newList = Math.floor((Math.random()*20)+1);
+//     if(!newUnique.includes(newList)){
+//     newUnique.push(newList);
+// } }
+// console.log(newUnique);
+
+//<--------------------TASK------------------------>
+// Sort descending order: Array
+//  const newArrs = ['apple', 'banana', 'pear', 'pineapple', 'orange']
+const newArrs = [3, 8, 0, 23, 3]
+newArrs.sort((a,b)=>{
+    return b-a
+});
+// newArrs.reverse();
+console.log(newArrs);
+
+
+const totalArr = [2, 4, 8, 10, 20];
+let sum = 0; 
+for(i = 0; i < totalArr.length; i++){
+    sum= sum + totalArr[i];
+}
+// totalArr.forEach(element => {
+//     sum += element;
+// });
+console.log(sum);
+
+
+// includes
 const newUnique = [];
 for ( let i=0; i<20; i++){
     let newList = Math.floor((Math.random()*20)+1);
@@ -377,3 +408,5 @@ for ( let i=0; i<20; i++){
     newUnique.push(newList);
 } }
 console.log(newUnique);
+
+
