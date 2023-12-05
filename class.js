@@ -30,6 +30,13 @@ const person5 = {
     age: 23,
     readBio: function(){
         console.log("this is my name", this.name, "and my age is", this.age);
+    },
+
+    //In arrow function this refers to the globalTHIS
+    // so its better to refer directly the object name and access the details 
+    readName: () => {
+        console.log("this is my name", person5.name)
     }
 }
 person5.readBio();
+person5.readName();
